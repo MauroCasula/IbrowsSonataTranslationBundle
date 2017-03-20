@@ -82,7 +82,7 @@ class ORMTranslationAdmin extends TranslationAdmin
                     'field_type'    => 'checkbox',
                 )
             )
-            ->add('key', 'doctrine_orm_string')
+            ->add('key', 'doctrine_orm_string', array('show_filter' => true))
             ->add(
                 'domain',
                 'doctrine_orm_choice',
@@ -92,7 +92,7 @@ class ORMTranslationAdmin extends TranslationAdmin
                         'required'    => true,
                         'multiple'    => false,
                         'expanded'    => false,
-                        'empty_data'  => 'all'
+                        'empty_data'  => 'all',
                     ),
                     'field_type'    => 'choice',
                 )
